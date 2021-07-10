@@ -19,7 +19,7 @@ app.use(express.json({ extended: true }));
 
 
 
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 // Importar rutas (Middleware)
 app.use('/api/usuarios', require('./routes/usuarios'));
